@@ -86,7 +86,7 @@ about.addEventListener('mouseenter', () => {
   
 })
 about.addEventListener('mouseleave', () => {
-  navAbout.style.borderRadius = '0px';
+  // navAbout.style.borderRadius = '0px';
   navAbout.style.backgroundColor = '';
 
 })
@@ -98,7 +98,7 @@ skills.addEventListener('mouseenter', () => {
   
 })
 skills.addEventListener('mouseleave', () => {
-  navSkills.style.borderRadius = '0px';
+  // navSkills.style.borderRadius = '0px';
   navSkills.style.backgroundColor = '';
 
 })
@@ -111,8 +111,8 @@ experience.addEventListener('mouseenter', () => {
 })
 experience.addEventListener('mouseleave', () => {
   navExperience.style.backgroundColor = '';
-  navExperience.style.borderRadius = '0px';
-  navExperience.style.borderRadius = '0 ';
+  // navExperience.style.borderRadius = '0px';
+  // navExperience.style.borderRadius = '0 ';
 
 })
 
@@ -123,7 +123,7 @@ education.addEventListener('mouseenter', () => {
   
 })
 education.addEventListener('mouseleave', () => {
-  navEducation.style.borderRadius = '0px';
+  // navEducation.style.borderRadius = '0px';
   navEducation.style.backgroundColor = '';
 
 })
@@ -135,7 +135,7 @@ projects.addEventListener('mouseenter', () => {
   
 })
 projects.addEventListener('mouseleave', () => {
-  navProjects.style.borderRadius = '0px';
+  // navProjects.style.borderRadius = '0px';
   navProjects.style.backgroundColor = '';
 
 })
@@ -147,7 +147,7 @@ contact.addEventListener('mouseenter', () => {
   
 })
 contact.addEventListener('mouseleave', () => {
-  navConatct.style.borderRadius = '0px';
+  // navConatct.style.borderRadius = '0px';
   navConatct.style.backgroundColor = '';
 
 })
