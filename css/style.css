@@ -110,60 +110,81 @@ h3 {
     border-radius: 20px;
     background-color: rgba(91, 91, 226, 0.274);
 }
-.shadow{
-    transition: box-shadow 0.4s ease-out;
+.color0{
+    transition: box-shadow 2s ease-out;
+   
 }
 
-.shadow:hover{
-
-    box-shadow: 0 0 24px rgba(0, 0, 128, 0.3);
+.shadow2{
+    border: 0.5px solid black;
+    box-shadow: 0 0 20px black;
 }
 
 
 
 
+/* skills */
+#skills{
+ 
+    /* background-color: #0C7075; */
+}
 
 .c-wrapper {
     display: flex;
     justify-content: start;
-    background-color: red;
+    align-items: center;
     width: 100%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+  
+}
+.color1{
+    background-color: rgba(0, 128, 0, 0.137);
+    transition: box-shadow 2s ease-out;
+
 }
 
 .c-left {
     display: flex;
     flex-direction: column;
-    /* background-color: blue; */
     width: 600px;
     padding-right: 90px;
     text-align: end;
+    font-size: 17px;
+    font-weight: 500;
 
 }
 
 .c-icon {
+    display: flex;
+    align-items: center;
     width: auto;
     height: 100px;
-    /* background-color: yellowgreen; */
     text-align: center;
+    
 
 }
 
 .c-icon>span {
     border-radius: 50%;
     padding: 20px;
-    border: 2px solid black;
-    background-color: black;
+    background-color: navy;
 
     font-size: 1.5rem;
     padding: 12px;
     color: white;
 
 }
+.c-icon>span:hover{
+    background-color: rgba(0, 0, 128, 0.616);
+
+}
 
 .c-right {
     padding-left: 60px;
     width: 600px;
-    background-color: yellow;
+    font-size: 17px;
+  
 
 }
 
@@ -173,6 +194,12 @@ h3 {
     gap: 30px;
     flex-wrap: wrap;
 
+}
+
+/* experince */
+.color2{
+    background-color: rgba(108, 145, 35, 0.555);
+    transition: box-shadow 2s ease-out;
 }
 
 
@@ -296,7 +323,11 @@ button:hover,
     margin-right: auto;
 }
 
-
+/* education */
+.color3{
+    background-color:rgba(187, 108, 187, 0.342);
+    transition: box-shadow 2s ease-out;
+}
 
 
 

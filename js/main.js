@@ -77,17 +77,32 @@ let navEducation = document.querySelector('#right-nav>div:nth-child(5)>a');
 let navConatct = document.querySelector('#right-nav>div:nth-child(6)>a');
 
 
+/* about list */
+let aboutList=document.getElementsByClassName('color0');
+/* skills list */
+let skillList=document.getElementsByClassName('color1');
+/* experience */
+let expList=document.getElementsByClassName('color2');
+/* education */
+let eduList=document.getElementsByClassName('color3');
+
+
 
 /* ------------------------ */
 about.addEventListener('mouseenter', () => {
-
   navAbout.style.backgroundColor = '#0e4091a9';
   navAbout.style.borderRadius = '10px';
+  for(let i=0; i<aboutList.length;i++){
+    aboutList[i].classList.add('shadow2');
+  }
   
 })
 about.addEventListener('mouseleave', () => {
-  // navAbout.style.borderRadius = '0px';
+ 
   navAbout.style.backgroundColor = '';
+  for(let i=0; i<aboutList.length;i++){
+    aboutList[i].classList.remove('shadow2');
+  }
 
 })
 
@@ -95,11 +110,18 @@ skills.addEventListener('mouseenter', () => {
 
   navSkills.style.backgroundColor = '#0e4091a9';
   navSkills.style.borderRadius = '10px';
+
+  for(let i=0; i<skillList.length;i++){
+    skillList[i].classList.add('shadow2');
+  }
   
 })
 skills.addEventListener('mouseleave', () => {
-  // navSkills.style.borderRadius = '0px';
   navSkills.style.backgroundColor = '';
+
+  for(let i=0; i<skillList.length;i++){
+    skillList[i].classList.remove('shadow2');
+  }
 
 })
 
@@ -107,12 +129,17 @@ experience.addEventListener('mouseenter', () => {
 
   navExperience.style.backgroundColor = '#0e4091a9';
   navExperience.style.borderRadius = '10px';
+  for(let i=0; i<expList.length;i++){
+    expList[i].classList.add('shadow2');
+  }
   
 })
 experience.addEventListener('mouseleave', () => {
   navExperience.style.backgroundColor = '';
-  // navExperience.style.borderRadius = '0px';
-  // navExperience.style.borderRadius = '0 ';
+  for(let i=0; i<expList.length;i++){
+    expList[i].classList.remove('shadow2');
+  }
+  
 
 })
 
@@ -120,11 +147,17 @@ education.addEventListener('mouseenter', () => {
 
   navEducation.style.backgroundColor = '#0e4091a9';
   navEducation.style.borderRadius = '10px';
+  for(let i=0; i<eduList.length;i++){
+    eduList[i].classList.add('shadow2');
+  }
   
 })
 education.addEventListener('mouseleave', () => {
-  // navEducation.style.borderRadius = '0px';
+ 
   navEducation.style.backgroundColor = '';
+  for(let i=0; i<eduList.length;i++){
+    eduList[i].classList.remove('shadow2');
+  }
 
 })
 
@@ -135,7 +168,7 @@ projects.addEventListener('mouseenter', () => {
   
 })
 projects.addEventListener('mouseleave', () => {
-  // navProjects.style.borderRadius = '0px';
+ 
   navProjects.style.backgroundColor = '';
 
 })
@@ -147,7 +180,7 @@ contact.addEventListener('mouseenter', () => {
   
 })
 contact.addEventListener('mouseleave', () => {
-  // navConatct.style.borderRadius = '0px';
+  
   navConatct.style.backgroundColor = '';
 
 })
