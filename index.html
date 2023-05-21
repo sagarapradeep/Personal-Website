@@ -19,10 +19,9 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     
     
-
-
     <!-- pop up window -->
-    <script src="popup.js"></script>
+    <script defer src="/js/main.js"></script>
+  
   </head>
 
 
@@ -30,60 +29,51 @@
     <header>
       <div class="video-container">
         <video autoplay muted loop id="video-background">
-          <source src="video/2.mp4" type="video/mp4">
+          <source src="video/nebula-24623.mp4" type="video/mp4">
           
         </video>
       </div>
 
-      <h1>Hey,I'm</h1>
-      <h2>SAGARA PRADEEP</h2>
-      <h1>Full Stack Developer</h1>
+      <h2 id="main-text">SAGARA PRADEEP 
+       
+      </h2>
+    
 
-      <div>
+      <div id="arrow">
         <a href="#about">
           <div id="arrow-wrapper">
+            <div>see more</div>
             <span class="material-symbols-outlined">
               keyboard_double_arrow_down
               </span>
           </div>
-
+        </a>
 
       </div>
-    
-
-
-      </a>
      
-
-
      
     </header>
 
     
-    <nav>
-      <div class="margine" id="left-nav">Sagara Pradeep</div>
+    <nav class="margine">
+      
+      <div id="left-nav">Sagara Pradeep</div>
 
-      <div class="margine" id="right-nav">
-        <div><a href="#about">About</a></div>
-        <div><a href="#skills">Skills & Technologies</a></div>
-        <div><a href="#experience">Experience</a></div>
-        <div><a href="#projects">Projects</a></div>
-        <div><a href="#education">Education</a></div>
-        <div><a href="#contact">Contact</a></div>
+      <div id="right-nav">
+        <div><a class="reach-heading" href="#about">About</a></div>
+        <div><a class="reach-heading" href="#skills">Skills & Technologies</a></div>
+        <div><a class="reach-heading" href="#experience">Experience</a></div>
+        <div><a class="reach-heading" href="#projects">Projects</a></div>
+        <div><a class="reach-heading" href="#education">Education</a></div>
+        <div><a class="reach-heading" href="#contact">Contact</a></div>
       </div>
-    </nav>
-    
+    </nav> 
+
+   
     
     
     <main class="margine">
-      
-      
-      
-
-     
-
-   
-
+    
       <section id="about" class="section">
         <h2>About</h2>
 
@@ -357,11 +347,9 @@
 
         </div>
 
-        
-
-        
-
       </section> 
+
+      
       
       <section class="section" id="experience" >
         <h2>Experience</h2>
@@ -592,7 +580,7 @@
 
     </main>
 
-    <footer class="margine" id="contact">
+    <footer class="margine section" id="contact">
 
       <h2>Contact</h2>
 
