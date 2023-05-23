@@ -89,7 +89,7 @@ h3 {
     border-bottom-right-radius: 20px; */
     border-radius: 30px;
     background-color: rebeccapurple;
-    background-image: url('/img/1.jpg');
+    background-image: url('img/1.jpg');
     background-position: top;
     background-size: cover;
    
@@ -112,6 +112,7 @@ h3 {
 }
 .color0{
     transition: box-shadow 2s ease-out;
+    border: 0.5px solid transparent;
    
 }
 
@@ -141,6 +142,7 @@ h3 {
 .color1{
     background-color: rgba(0, 128, 0, 0.137);
     transition: box-shadow 2s ease-out;
+    border: 0.5px solid transparent;
 
 }
 
@@ -200,6 +202,7 @@ h3 {
 .color2{
     background-color: rgba(108, 145, 35, 0.555);
     transition: box-shadow 2s ease-out;
+    border: 0.5px solid transparent;
 }
 
 
@@ -327,6 +330,7 @@ button:hover,
 .color3{
     background-color:rgba(187, 108, 187, 0.342);
     transition: box-shadow 2s ease-out;
+    border: 0.5px solid transparent;
 }
 
 

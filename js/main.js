@@ -89,103 +89,123 @@ let eduList=document.getElementsByClassName('color3');
 
 
 /* ------------------------ */
-about.addEventListener('mouseenter', () => {
-  navAbout.style.backgroundColor = '#0e4091a9';
-  navAbout.style.borderRadius = '10px';
-  for(let i=0; i<aboutList.length;i++){
-    aboutList[i].classList.add('shadow2');
-  }
+// about.addEventListener('mouseenter', () => {
+//   navAbout.style.backgroundColor = '#0e4091a9';
+//   navAbout.style.borderRadius = '10px';
+//   for(let i=0; i<aboutList.length;i++){
+//     aboutList[i].classList.add('shadow2');
+//   }
   
-})
-about.addEventListener('mouseleave', () => {
+// })
+// about.addEventListener('mouseleave', () => {
  
-  navAbout.style.backgroundColor = '';
-  for(let i=0; i<aboutList.length;i++){
-    aboutList[i].classList.remove('shadow2');
-  }
+//   navAbout.style.backgroundColor = '';
+//   for(let i=0; i<aboutList.length;i++){
+//     aboutList[i].classList.remove('shadow2');
+//   }
 
-})
+// })
 
-skills.addEventListener('mouseenter', () => {
+// skills.addEventListener('mouseenter', () => {
 
-  navSkills.style.backgroundColor = '#0e4091a9';
-  navSkills.style.borderRadius = '10px';
+//   navSkills.style.backgroundColor = '#0e4091a9';
+//   navSkills.style.borderRadius = '10px';
 
-  for(let i=0; i<skillList.length;i++){
-    skillList[i].classList.add('shadow2');
-  }
+//   for(let i=0; i<skillList.length;i++){
+//     skillList[i].classList.add('shadow2');
+//   }
   
-})
-skills.addEventListener('mouseleave', () => {
-  navSkills.style.backgroundColor = '';
+// })
+// skills.addEventListener('mouseleave', () => {
+//   navSkills.style.backgroundColor = '';
 
-  for(let i=0; i<skillList.length;i++){
-    skillList[i].classList.remove('shadow2');
-  }
+//   for(let i=0; i<skillList.length;i++){
+//     skillList[i].classList.remove('shadow2');
+//   }
 
-})
+// })
 
-experience.addEventListener('mouseenter', () => {
+// experience.addEventListener('mouseenter', () => {
 
-  navExperience.style.backgroundColor = '#0e4091a9';
-  navExperience.style.borderRadius = '10px';
-  for(let i=0; i<expList.length;i++){
-    expList[i].classList.add('shadow2');
-  }
+//   navExperience.style.backgroundColor = '#0e4091a9';
+//   navExperience.style.borderRadius = '10px';
+//   for(let i=0; i<expList.length;i++){
+//     expList[i].classList.add('shadow2');
+//   }
   
-})
-experience.addEventListener('mouseleave', () => {
-  navExperience.style.backgroundColor = '';
-  for(let i=0; i<expList.length;i++){
-    expList[i].classList.remove('shadow2');
-  }
+// })
+// experience.addEventListener('mouseleave', () => {
+//   navExperience.style.backgroundColor = '';
+//   for(let i=0; i<expList.length;i++){
+//     expList[i].classList.remove('shadow2');
+//   }
   
 
-})
+// })
 
-education.addEventListener('mouseenter', () => {
+// education.addEventListener('mouseenter', () => {
 
-  navEducation.style.backgroundColor = '#0e4091a9';
-  navEducation.style.borderRadius = '10px';
-  for(let i=0; i<eduList.length;i++){
-    eduList[i].classList.add('shadow2');
-  }
+//   navEducation.style.backgroundColor = '#0e4091a9';
+//   navEducation.style.borderRadius = '10px';
+//   for(let i=0; i<eduList.length;i++){
+//     eduList[i].classList.add('shadow2');
+//   }
   
-})
-education.addEventListener('mouseleave', () => {
+// })
+// education.addEventListener('mouseleave', () => {
  
-  navEducation.style.backgroundColor = '';
-  for(let i=0; i<eduList.length;i++){
-    eduList[i].classList.remove('shadow2');
-  }
+//   navEducation.style.backgroundColor = '';
+//   for(let i=0; i<eduList.length;i++){
+//     eduList[i].classList.remove('shadow2');
+//   }
 
-})
+// })
 
-projects.addEventListener('mouseenter', () => {
+// projects.addEventListener('mouseenter', () => {
 
-  navProjects.style.backgroundColor = '#0e4091a9';
-  navProjects.style.borderRadius = '10px';
+//   navProjects.style.backgroundColor = '#0e4091a9';
+//   navProjects.style.borderRadius = '10px';
   
-})
-projects.addEventListener('mouseleave', () => {
+// })
+// projects.addEventListener('mouseleave', () => {
  
-  navProjects.style.backgroundColor = '';
+//   navProjects.style.backgroundColor = '';
 
-})
+// })
 
-contact.addEventListener('mouseenter', () => {
+// contact.addEventListener('mouseenter', () => {
 
-  navConatct.style.backgroundColor = '#0e4091a9';
-  navConatct.style.borderRadius = '10px';
+//   navConatct.style.backgroundColor = '#0e4091a9';
+//   navConatct.style.borderRadius = '10px';
   
-})
-contact.addEventListener('mouseleave', () => {
+// })
+// contact.addEventListener('mouseleave', () => {
   
-  navConatct.style.backgroundColor = '';
+//   navConatct.style.backgroundColor = '';
 
-})
+// })
 
 
+/* test */
+/* ------------------------------ */
+let box=education.getBoundingClientRect();
+// console.log(box)
+
+
+let top1=box.top;
+let bottom1=box.bottom;
+
+window.addEventListener('scroll', function() {
+
+  if(top1<innerHeight){
+    console.log("Class added")
+  }
+  if(bottom1<innerHeight){
+    console.log("class removed!")
+  }
+  
+
+});
 
 
 
