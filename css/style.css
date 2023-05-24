@@ -89,7 +89,7 @@ h3 {
     border-bottom-right-radius: 20px; */
     border-radius: 30px;
     background-color: rebeccapurple;
-    background-image: url('img/1.jpg');
+    background-image: url('../img/1.jpg');
     background-position: top;
     background-size: cover;
    
@@ -199,6 +199,11 @@ h3 {
 }
 
 /* experince */
+
+#experience{
+    /* background-color: blueviolet; */
+
+}
 .color2{
     background-color: rgba(108, 145, 35, 0.555);
     transition: box-shadow 2s ease-out;

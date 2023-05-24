@@ -78,13 +78,13 @@ let navConatct = document.querySelector('#right-nav>div:nth-child(6)>a');
 
 
 /* about list */
-let aboutList=document.getElementsByClassName('color0');
+let aboutList = document.getElementsByClassName('color0');
 /* skills list */
-let skillList=document.getElementsByClassName('color1');
+let skillList = document.getElementsByClassName('color1');
 /* experience */
-let expList=document.getElementsByClassName('color2');
+let expList = document.getElementsByClassName('color2');
 /* education */
-let eduList=document.getElementsByClassName('color3');
+let eduList = document.getElementsByClassName('color3');
 
 
 
@@ -95,10 +95,10 @@ let eduList=document.getElementsByClassName('color3');
 //   for(let i=0; i<aboutList.length;i++){
 //     aboutList[i].classList.add('shadow2');
 //   }
-  
+
 // })
 // about.addEventListener('mouseleave', () => {
- 
+
 //   navAbout.style.backgroundColor = '';
 //   for(let i=0; i<aboutList.length;i++){
 //     aboutList[i].classList.remove('shadow2');
@@ -114,7 +114,7 @@ let eduList=document.getElementsByClassName('color3');
 //   for(let i=0; i<skillList.length;i++){
 //     skillList[i].classList.add('shadow2');
 //   }
-  
+
 // })
 // skills.addEventListener('mouseleave', () => {
 //   navSkills.style.backgroundColor = '';
@@ -132,14 +132,14 @@ let eduList=document.getElementsByClassName('color3');
 //   for(let i=0; i<expList.length;i++){
 //     expList[i].classList.add('shadow2');
 //   }
-  
+
 // })
 // experience.addEventListener('mouseleave', () => {
 //   navExperience.style.backgroundColor = '';
 //   for(let i=0; i<expList.length;i++){
 //     expList[i].classList.remove('shadow2');
 //   }
-  
+
 
 // })
 
@@ -150,10 +150,10 @@ let eduList=document.getElementsByClassName('color3');
 //   for(let i=0; i<eduList.length;i++){
 //     eduList[i].classList.add('shadow2');
 //   }
-  
+
 // })
 // education.addEventListener('mouseleave', () => {
- 
+
 //   navEducation.style.backgroundColor = '';
 //   for(let i=0; i<eduList.length;i++){
 //     eduList[i].classList.remove('shadow2');
@@ -165,10 +165,10 @@ let eduList=document.getElementsByClassName('color3');
 
 //   navProjects.style.backgroundColor = '#0e4091a9';
 //   navProjects.style.borderRadius = '10px';
-  
+
 // })
 // projects.addEventListener('mouseleave', () => {
- 
+
 //   navProjects.style.backgroundColor = '';
 
 // })
@@ -177,10 +177,10 @@ let eduList=document.getElementsByClassName('color3');
 
 //   navConatct.style.backgroundColor = '#0e4091a9';
 //   navConatct.style.borderRadius = '10px';
-  
+
 // })
 // contact.addEventListener('mouseleave', () => {
-  
+
 //   navConatct.style.backgroundColor = '';
 
 // })
@@ -188,24 +188,68 @@ let eduList=document.getElementsByClassName('color3');
 
 /* test */
 /* ------------------------------ */
-let box=education.getBoundingClientRect();
 // console.log(box)
 
+let sectionList = document.getElementsByClassName('section');
 
-let top1=box.top;
-let bottom1=box.bottom;
+let list2 = [about, skills, experience, education]
 
-window.addEventListener('scroll', function() {
 
-  if(top1<innerHeight){
-    console.log("Class added")
+let oldValue = 0;
+
+window.addEventListener('scroll', function (e) {
+
+  for (let i = 0; i < list2.length; i++) {
+    let section = list2[i];
+
+
+
+
+
+    let box = section.getBoundingClientRect();
+    let top1 = box.top;
+    let bottom1 = box.bottom;
+
+
+    newValue = window.pageYOffset;
+    console.log(newValue)
+
+
+
+
+    if ((oldValue - newValue )< 0) {
+      // console.log(section, top1);
+      // console.log(section, bottom1)
+
+      if (top1 <= (innerHeight * 0.5) && !(bottom1 < innerHeight * 0.5)) {
+        // section.classList.add('shadow2')
+        section.classList.add('color0')
+
+
+      }
+      if (bottom1 < innerHeight * 0.5) {
+        // section.classList.remove('shadow2')
+        section.classList.remove('color0')
+      }
+
+
+    }
+    // else if (oldValue - newValue > 0) {
+    //   if ((bottom1 >= innerHeight * 0.5) && !(top1 >= innerHeight * 0.5)) {
+    //     // section.classList.add('shadow2')
+    //     section.style.backgroundColor='red'
+    //   }
+    //   if (top1 >= innerHeight * 0.5) {
+    //     // section.classList.remove('shadow2')
+    //     section.style.backgroundColor='green'
+    //   }
+    // }
+
+    // Update the old value
   }
-  if(bottom1<innerHeight){
-    console.log("class removed!")
-  }
-  
-
+  oldValue = newValue;
 });
+
 
 
 
